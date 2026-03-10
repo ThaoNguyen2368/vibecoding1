@@ -5,7 +5,8 @@ const StudentForm = ({
   onChange, 
   onSubmit, 
   onCancel, 
-  isEditing 
+  isEditing,
+  classes
 }) => {
   return (
     <div className="student-form">
@@ -73,6 +74,23 @@ const StudentForm = ({
             onChange={onChange}
             required
           />
+        </div>
+        
+        <div className="form-group">
+          <label htmlFor="class_id">Class:</label>
+          <select
+            id="class_id"
+            name="class_id"
+            value={formData.class_id || ''}
+            onChange={onChange}
+          >
+            <option value="">Select a class (optional)</option>
+            {classes.map((cls) => (
+              <option key={cls.id} value={cls.class_id}>
+                {cls.class_name} ({cls.class_id})
+              </option>
+            ))}
+          </select>
         </div>
         
         <div className="form-buttons">

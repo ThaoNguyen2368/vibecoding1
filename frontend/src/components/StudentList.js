@@ -11,6 +11,7 @@ const StudentList = ({ students, onEdit, onDelete }) => {
             <th>Name</th>
             <th>Major</th>
             <th>GPA</th>
+            <th>Class</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -21,6 +22,7 @@ const StudentList = ({ students, onEdit, onDelete }) => {
               <td>{student.name}</td>
               <td>{student.major}</td>
               <td>{student.gpa}</td>
+              <td>{student.class_info ? student.class_info.class_name : '-'}</td>
               <td>
                 <button 
                   onClick={() => onEdit(student)}

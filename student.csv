@@ -1,0 +1,11 @@
+student_id,name,birth_year,major,gpa
+S001,Nguyen Van A,2002,Khoa học máy tính,3.5
+S002,Le Thi B,2001,Khoa học máy tính,3.7
+S003,Tran Van C,2002,Kỹ thuật phần mềm,3.4
+S004,Pham Thi D,2003,Kỹ thuật phần mềm,3.6
+S005,Hoang Van E,2002,Mạng máy tính,3.2
+S006,Nguyen Thi F,2001,Mạng máy tính,3.8
+S007,Le Van G,2003,AI & ML,3.9
+S008,Pham Van H,2002,AI & ML,3.7
+S009,Tran Thi I,2003,Cybersecurity,3.3
+S010,Nguyen Van J,2001,Cybersecurity,3.6
